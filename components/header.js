@@ -3,14 +3,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/header.module.css';
 
-const header = () => (
+const Header = () => (
   <header className={styles.header}>
-    <Image src="/images/marvel-logo.png" alt="Marvel Logo" width={180} height={90} />
+    <Image src="/images/marvel-logo.png" alt="Marvel Logo" width={180} height={90} priority/>
     <nav>
       <Link href="/">Home</Link>
-      <Link href="/favourites">Favourites</Link>
+      <Link href="/searchCharacter">Search</Link>
     </nav>
   </header>
 );
 
-export default header;
+export default Header;
